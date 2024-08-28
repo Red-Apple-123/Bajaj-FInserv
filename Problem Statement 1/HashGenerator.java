@@ -1,5 +1,4 @@
-import org.json.JSONObject;
-import org.json.JSONTokener;
+package HashGenerator;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,9 +7,12 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
 import java.util.Random;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+
 public class HashGenerator {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println("Usage: java -jar test.jar <PRN Number> <JSON File Path>");
             return;
@@ -84,4 +86,7 @@ public class HashGenerator {
         }
         return sb.toString();
     }
-}
+
+	}
+
+
